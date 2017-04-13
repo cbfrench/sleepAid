@@ -1,0 +1,53 @@
+body {
+    background-color: #036633;
+}
+#heading {
+    color: white;
+    font-family: Courier;
+    display: flex;
+    justify-content: center;
+    margin-top: 12em;
+}
+#color {
+    color: white;
+    font-family: Courier;
+    display: flex;
+    justify-content: center;
+}
+.button {
+    color: white;
+    font-family: Courier;
+    text-align: center;
+    width: 10em;
+    border: .2em white solid;
+    border-radius: .2em;
+    background-color: transparent;
+}
+.button:focus {
+    outline: 0;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+#test {
+    color: white;
+}
+#version {
+    color: white;
+    font-family: Courier;
+    text-align: center;
+    font-size: .9em;
+    margin-top: 17em;
+}
+#copyright {
+    color: white;
+    font-family: Courier;
+    text-align: center;
+    font-size: .9em;
+}
+body:-webkit-full-screen {
+    width: 100%;
+    height: 100%;
+}
