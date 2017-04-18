@@ -14,14 +14,14 @@ var greenCountUp = false;
 var blueCountUp = false;
 var authorization = false;
 var time = 150;
-var trackOne = new Audio("C:/Users/Connor/Desktop/funsiesFiles/forest.mp3");
-var trackTwo = new Audio("C:/Users/Connor/Desktop/funsiesFiles/beach.mp3");
-var trackThree = new Audio("C:/Users/Connor/Desktop/funsiesFiles/meadow.mp3");
-var trackFour = new Audio("C:/Users/Connor/Desktop/funsiesFiles/whiteNoise.mp3");
-var trackFive = new Audio("C:/Users/Connor/Desktop/funsiesFiles/sun.mp3");
+var trackOne = new Audio("forest.mp3");
+var trackTwo = new Audio("beach.mp3");
+var trackThree = new Audio("meadow.mp3");
+var trackFour = new Audio("whiteNoise.mp3");
+var trackFive = new Audio("sun.mp3");
 var muted = false;
 var code = false;
-
+var full = 0;
 
 
 //registers the press of the top button and sets a boolean to represent it
@@ -156,7 +156,7 @@ function start() {
         document.getElementById("version").style.display = "none";
         document.getElementById("copyright").style.display = "none";
         document.getElementById("fullScreen").style.display = "none";
-        document.getElementById("disco").style.display = "none";
+        document.getElementById("begin").style.marginBottom = "30em";
     }
     if(!authorization)
     {
@@ -168,7 +168,7 @@ function start() {
         document.getElementById("version").style.justifyContent = "center";
         document.getElementById("copyright").style.justifyContent = "center";
         document.getElementById("fullScreen").style.display = "inline";
-        document.getElementById("disco").style.display = "inline";
+        document.getElementById("begin").style.marginBottom = "0em";
     }
 }, time);
 
@@ -294,9 +294,24 @@ function muter()
     }
 }
 
+function screen(){
+    if(full != -1){
+        fillScreen();
+    }
+    else{
+        exitFullScreen();
+    }
+}
+
+function exitFullScreen(){
+    full = 0;
+    document.webkitExitFullScreen();
+}
+
 
 //makes the page take up the entire screen
 function fillScreen()
 {
+    full = 1;
     document.body.webkitRequestFullScreen();
 }

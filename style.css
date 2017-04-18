@@ -1,12 +1,22 @@
+html{
+    background-color: white;
+    overflow-y: hidden;
+}
+
 body{
     background-color: #036633;
+    margin: 0;
+    height: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 #heading{
     color: white;
     font-family: Courier;
     display: flex;
     justify-content: center;
-    margin-top: 12em;
+    padding-top: 11em;
+    width: 100%;
 }
 #color{
     color: white;
