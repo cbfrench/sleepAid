@@ -58,6 +58,9 @@ p{
     #header{
         margin-top: 10rem;
     }
+    #footer{
+        bottom: 2.5rem;
+    }
 }
 
 
