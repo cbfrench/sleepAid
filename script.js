@@ -28,10 +28,6 @@ function toggleBegin(){
     return "begin";
 }
 
-function toggleTheme(){
-    return;
-}
-
 function toggleMute(){
     var mute = document.getElementById("mute");
     if(mute.innerHTML === "mute"){
