@@ -103,6 +103,7 @@ $(function(){
                 blue = fixString(blue);
                 document.body.style.backgroundColor = "#" + red + green + blue;
                 color = document.body.style.backgroundColor;
+                document.getElementById("color").innerHTML = "#" + red + green + blue;
                 checkColoring(red, green, blue);
             }
             else{
