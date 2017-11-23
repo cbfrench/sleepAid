@@ -59,7 +59,7 @@ p{
         margin-top: 10rem;
     }
     #fullscreen{
-        display: none;
+        visibility: hidden;
     }
     #footer{
         bottom: 2.5rem;
