@@ -124,11 +124,14 @@ $(function(){
         $("#mute").text(text);
     });
     $("#fullscreen").click(function(){
+        //currently only works for Chrome, not Firefox
         if(window.innerHeight == screen.height){
             document.webkitExitFullscreen();
+            $("#fullscreen").text("fullscreen");
         }
         else{
             document.body.webkitRequestFullScreen();
+            $("#fullscreen").text("exit fullscreen");
         }
     });
 });

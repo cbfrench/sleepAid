@@ -1,0 +1,18 @@
+$white: #f3f3f3;
+$color: #036633;
+$shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+
+%transition{
+    transition: all 0.2s;
+}
+
+@mixin bp{
+    @media only screen and (max-width: 400px){
+        @content;
+    }
+}
+@mixin fs{
+    width: 100%;
+    height: 100%;
+    background-color: $color;
+}

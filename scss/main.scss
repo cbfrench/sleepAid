@@ -1,0 +1,82 @@
+@import 'variables';
+html{
+    background-color: $color;   //DO NOT REMOVE, used for fullscreen color
+}
+body{
+    font-family: Courier, serif;
+    &:fullscreen{
+        @include fs;
+    }
+    &:-webkit-full-screen{
+       @include fs;
+    }
+    &:-moz-full-screen{
+        @include fs;
+    }
+    background-color: $color;
+    color: $white;
+    text-align: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    text-shadow: $shadow;
+}
+p{
+    -webkit-margin : {
+        before: 0px !important;
+        after: 0px !important;
+        start: 0px !important;
+        end: 0px !important;
+    }
+}
+#header{
+    margin-top: 10rem;
+}
+#color{
+    margin-bottom: 2rem;
+}
+.button{
+    border: 3px $white solid{
+        radius: 3px;
+    }
+    text-align: center;
+    margin: auto{
+        bottom: 1rem;
+    }
+    box-shadow: $shadow;
+    width: 10rem;
+    padding: 0.25rem 0;
+    @extend %transition;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:hover{
+        width: 11rem;
+        color: black;
+        background-color: $white;
+        text-shadow: none;
+    }
+}
+#footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5rem;
+    a{
+        color: $white;
+        text-decoration: none;
+        @extend %transition;
+        &:hover{
+            color: black;
+        }
+    }
+}
+@include bp{
+    #fullscreen{
+        visibility: hidden;
+    }
+}

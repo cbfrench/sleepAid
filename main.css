@@ -1,0 +1,78 @@
+.button, #footer a {
+  transition: all 0.2s; }
+
+html {
+  background-color: #036633; }
+
+body {
+  font-family: Courier, serif;
+  background-color: #036633;
+  color: #f3f3f3;
+  text-align: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25); }
+  body:fullscreen {
+    width: 100%;
+    height: 100%;
+    background-color: #036633; }
+  body:-webkit-full-screen {
+    width: 100%;
+    height: 100%;
+    background-color: #036633; }
+  body:-moz-full-screen {
+    width: 100%;
+    height: 100%;
+    background-color: #036633; }
+
+p {
+  -webkit-margin-before: 0px !important;
+  -webkit-margin-after: 0px !important;
+  -webkit-margin-start: 0px !important;
+  -webkit-margin-end: 0px !important; }
+
+#header {
+  margin-top: 10rem; }
+
+#color {
+  margin-bottom: 2rem; }
+
+.button {
+  border: 3px #f3f3f3 solid;
+    border-radius: 3px;
+  text-align: center;
+  margin: auto;
+    margin-bottom: 1rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  width: 10rem;
+  padding: 0.25rem 0;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .button:hover {
+    width: 11rem;
+    color: black;
+    background-color: #f3f3f3;
+    text-shadow: none; }
+
+#footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5rem; }
+  #footer a {
+    color: #f3f3f3;
+    text-decoration: none; }
+    #footer a:hover {
+      color: black; }
+
+@media only screen and (max-width: 400px) {
+  #fullscreen {
+    visibility: hidden; } }
+
+/*# sourceMappingURL=main.css.map */
